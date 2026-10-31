@@ -1,26 +1,21 @@
-# SPIT PWA 1.1.0
+# SPIT PWA 1.1.1
 
 Repository: frozentrone/spit
 Target: https://frozentrone.github.io/spit/
 
-## Why version increased
-The supplied application was version 1.0.1. This release adds full PWA packaging, install icons, offline app-shell caching, an offline fallback, a new SPIT logo, version metadata and cache lifecycle management. This is therefore a MINOR release: 1.1.0.
+## Changes
+- Shows v1.1.1 in the top blue banner.
+- Footer now reads: Created by WPG, University of Leeds.
+- The Saifoori (2025) thesis/correlation attribution is kept in the Method & limits main content and introduced as Source of this work.
+- Existing calculations, Save/Load Instance, CSV export, install flow and offline behaviour are preserved.
 
-## Upload all files to the repository root
-- index.html
-- manifest.webmanifest
-- service-worker.js
-- version.json
-- offline.html
-- favicon.png
-- icon-180.png
-- icon-192.png
-- icon-512.png
+## Deploy
+Upload all files in this ZIP to the root of the `spit` repository.
 
-## Verification
-1. Confirm the header/application loads at /spit/ and calculations still operate.
-2. Confirm version references report 1.1.0.
-3. Confirm the browser offers PWA installation and the generated SPIT icon is shown.
-4. Load once online, disconnect the network, reload, and confirm the application still opens and calculations work.
-5. Reconnect and confirm version.json, manifest.webmanifest and service-worker.js are fetched fresh rather than retained as stale runtime cache entries.
-6. Confirm the active cache is spit-v1.1.0 and older application caches are removed on activation.
+## Verify
+1. Confirm the top banner displays v1.1.1.
+2. Confirm the Method & limits tab contains the source attribution.
+3. Confirm the footer contains the WPG / University of Leeds credit.
+4. Confirm calculations, instance save/load and CSV export work.
+5. Load once online, disconnect, reload and confirm the app operates offline.
+6. Confirm the current cache is spit-v1.1.1 and previous caches are removed after activation.

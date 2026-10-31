@@ -1,7 +1,7 @@
 'use strict';
-const APP_VERSION='1.1.0';
+const APP_VERSION='1.1.1';
 const CACHE_NAME=`spit-v${APP_VERSION}`;
-const APP_SHELL=['./','./index.html','./offline.html','./favicon.png?v=1.1.0','./icon-180.png?v=1.1.0','./icon-192.png?v=1.1.0','./icon-512.png?v=1.1.0'];
+const APP_SHELL=['./','./index.html','./offline.html','./favicon.png?v=1.1.1','./icon-180.png?v=1.1.1','./icon-192.png?v=1.1.1','./icon-512.png?v=1.1.1'];
 const NEVER_CACHE=new Set(['service-worker.js','manifest.webmanifest','version.json']);
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE_NAME).then(cache=>cache.addAll(APP_SHELL)))});
 self.addEventListener('activate',event=>{event.waitUntil((async()=>{const keys=await caches.keys();await Promise.all(keys.filter(k=>k!==CACHE_NAME).map(k=>caches.delete(k)));await self.clients.claim()})())});
