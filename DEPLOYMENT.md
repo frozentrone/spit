@@ -1,10 +1,3 @@
-# SPIT 1.3.0
+# SPIT 1.10.1
 
-New PWA lifecycle controls:
-- Install button remains hidden unless the browser emits beforeinstallprompt; it is hidden in standalone mode and immediately after appinstalled.
-- Refresh button reloads the installed PWA without needing browser chrome.
-- Check updates explicitly calls ServiceWorkerRegistration.update().
-- App launch silently checks for updates.
-- When a new service worker reaches waiting/installed state, SPIT displays Update & restart / Later.
-- Update & restart sends SKIP_WAITING; controllerchange then reloads once into the new release.
-- Existing breakage data and impact calculations are preserved locally before/after reloads.
+Plot-legend consistency patch. The Breakage-kernel legend now uses the exact same sieve-series colour, marker-shape renderer, marker size, 14 px bold font, label spacing and visible-series filtering as the velocity-pressure plot. Regression legend keys remain below the sieve-series keys as solid (all-data) and dashed (individual-size) line samples.
