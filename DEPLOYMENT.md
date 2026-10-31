@@ -1,3 +1,10 @@
-# SPIT 1.10.1
+# SPIT 1.10.2
 
-Plot-legend consistency patch. The Breakage-kernel legend now uses the exact same sieve-series colour, marker-shape renderer, marker size, 14 px bold font, label spacing and visible-series filtering as the velocity-pressure plot. Regression legend keys remain below the sieve-series keys as solid (all-data) and dashed (individual-size) line samples.
+PWA identity patch for the GitHub Pages subdirectory deployment.
+
+Manifest identity/navigation:
+- id: /spit/
+- start_url: /spit/
+- scope: /spit/
+
+Runtime resources and service-worker registration remain relative to the deployed SPIT directory. Version, manifest asset cache-busting, service-worker registration and cache version are synchronised to 1.10.2.
