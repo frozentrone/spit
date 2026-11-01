@@ -1,2 +1,2 @@
-SPIT v1.12.1
-Save instance uses the File System Access save picker when supported, with a material-based suggested filename and download fallback. Added Clear instance; removed Refresh. Expanded Method & limits with Ghadiri-Zhang model basis, reference, interpretation and applicability notes. Existing v1.12.0 plotting functionality retained.
+SPIT v1.13.0
+Density data-model update. Particle density is stored/displayed per experimental pressure condition in Breakage data and is the density used for impact velocity and rho*d*V^2 analysis. CSV import preserves density into those condition records, export writes those same densities, and different conditions may use different densities. Repeats within one pressure condition must share density. The setup density is now a default for newly created tables. Older saved/local instances migrate legacy raw.density into condition density fields.
